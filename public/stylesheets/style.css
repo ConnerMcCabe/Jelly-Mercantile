@@ -1,4 +1,5 @@
 body {
+  
   margin: 0;
   height: 100vh;
   padding: 50px;
@@ -16,6 +17,19 @@ button {
 }
 a {
   color: #00B7FF;
+}
+section {
+  
+  flex-direction: row;
+  
+}
+#show-product {
+  display: flex;
+  flex-direction: column;
+
+}
+#show-image {
+  width: 30vh;
 }
 .box-shadow-menu {
   position: relative;
