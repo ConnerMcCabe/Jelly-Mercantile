@@ -1,0 +1,1 @@
+var Products = require('../models/product');

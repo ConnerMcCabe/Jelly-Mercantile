@@ -23,4 +23,7 @@ router.get('/logout', function(req, res){
   res.redirect('/');
   //need to go back and specify a view
 });
+
+
+
 module.exports = router;

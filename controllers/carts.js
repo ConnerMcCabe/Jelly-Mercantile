@@ -1,19 +1,19 @@
-var Carts = require('../models/carts');
+var Carts = require('../models/cart');
 
 module.exports = {
     index,
     new: newCart,
-    create,
     delete: deleteCart,
 }
 function index(req, res) {
     res.render('carts/index', {
         carts: Carts.getall(),
-        //time: req.time
+        
+        
     });
 }
 function newCart(req, res) {
-    res.render('carts/new' );
+    res.render('carts/index' );
 }
 function deleteCart(req, res) {
     Carts.deleteOne(req.params.id);
