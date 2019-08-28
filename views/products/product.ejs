@@ -1,5 +1,19 @@
 <%- include('./partials/header') %>
 <body>
     <h1>TEST 1</h1>
+<!-- Product page -->
+    <img src="<%= product.img %>" id="show-image">
+
+    <section id="show-page">
+        <div><%= product.name %></div>
+        <div>Description</div>
+        <div><%= product.description %></div>
+        <div>Price</div>
+        <div><%= product.price %></div>
+        <form method="GET" action="/<%= product.id %>/cart">
+            <button type="submit">Add to Cart</button>
+        </form>
+        
+    </section>
 </body>
 </html>

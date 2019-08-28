@@ -5,7 +5,15 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: linear-gradient(#e66465, #9198e5);
 }
-
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 5vmin;
+}
+button {
+  font-size: 5vmin;
+}
 a {
   color: #00B7FF;
 }
