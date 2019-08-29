@@ -1,7 +1,26 @@
 <%- include('./partials/header') %>
 <body>
-    <h1>TEST 2</h1>
-
-    
+    <br>
+    <h1>Joergen's Jellies</h1>
+    <h3>Joergen only wishes to bring you the finest handcrafted Jellies</h3>
+    <hr>
+    <br>
+    <h3>Your Cart</h3>
+    <section id="show-product" >
+        <img src="../images/catPic.jpeg" id="show-image">
+          <div><%= product.name %></div>
+          <div>Description</div>
+          <div><%= product.description %></div>
+          <div>Price</div>
+          <div><%= product.price %></div>
+          <!-- need a delete method -->
+          <form method="GET" action="/index">
+            <button type="submit">Buy Now</button>
+          </form>
+          <form method="POST" action="/<%= product.id %>?_method=DELETE">
+              <button type="submit">Remove from Cart</button>
+          </form>
+      </section>
+ 
 </body>
 </html>

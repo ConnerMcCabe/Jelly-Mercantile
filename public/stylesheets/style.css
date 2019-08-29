@@ -1,10 +1,17 @@
 body {
-  
+  display: block;
   margin: 0;
   height: 100vh;
   padding: 50px;
+  text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: linear-gradient(#e66465, #9198e5);
+}
+nav {
+  margin: 0%;
+  
+  background-color: #9198e5;
+  min-width: 100%;
 }
 ul {
   display: flex;
@@ -16,7 +23,7 @@ button {
   font-size: 5vmin;
 }
 a {
-  color: #00B7FF;
+  color: rgb(0, 0, 0);
 }
 section {
   
