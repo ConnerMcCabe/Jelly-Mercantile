@@ -29,7 +29,7 @@ router.get('/logout', function(req, res){
 router.get('/products', prodCtrl.prodIdx);
 
 router.get('/carts', function(req, res, next) {
-  res.render('carts/index', { });
+  res.render('carts/index', { user: req.user });
 });
 
 module.exports = router;

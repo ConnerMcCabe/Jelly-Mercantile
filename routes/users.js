@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-
+//cart only available while isLoggedIn
 
 function isLoggedIn(req, res, next) {
   if ( req.isAuthenticated() ) return next();

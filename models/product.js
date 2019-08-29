@@ -7,7 +7,9 @@ var productSchema = new Schema({
     price: String,
     img: String,
   }, {
-    timestamps: true
+    timestamps: true,
+    collection: 'Jelly'
 });
 
-module.exports = mongoose.model('Product', productSchema);
+
+module.exports = mongoose.model('Products', productSchema);

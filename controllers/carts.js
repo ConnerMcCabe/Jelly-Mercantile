@@ -4,11 +4,7 @@ module.exports = {
     index,
     delete: deleteCart,
 }
-// function index(req, res) {
-//     res.render('../views/cart/index', {
-//         carts: Carts.getall( ),
-//     });
-// }
+
 function index(req, res) {
     Product.find({}, function(err, product) {
         res.render('index', { product });

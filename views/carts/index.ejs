@@ -5,15 +5,16 @@
     <br>
     <hr>
     <br>
-    <h3>Your Cart</h3>
+    
 
     <section id="show-product" >
+      <h3>Your Cart</h3>
         <img src="../images/catPic.jpeg" id="show-image">
-          <div> product.name</div>
+          <div>(ejs) product.name</div>
           <div>Description</div>
-          <div> product.description</div>
+          <div>(ejs) product.description</div>
           <div>Price</div>
-          <div> product.price</div>
+          <div>(ejs) product.price</div>
           
           <form method="GET" action="/index">
             <button type="submit">Buy Now</button>
@@ -22,6 +23,21 @@
             <button type="submit">Remove from Cart</button>
           </form>
       </section>
- 
-</body>
+ <section id="rev">
+  <h2>Reviews</h2>
+    <form id="add-review-form" method="POST" action="post to reviews page">
+      <label>Review:</label>
+      <textarea name="content"></textarea>
+      <label>Rating:</label>
+        <select name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      <input type="submit" value="Add Review">
+    </form>
+  </section>
+  </body>
 </html>
