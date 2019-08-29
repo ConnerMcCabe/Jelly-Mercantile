@@ -1,4 +1,4 @@
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 <body>
     <br>
     <h1>Joergen's Jellies</h1>
@@ -6,6 +6,7 @@
     <hr>
     <br>
 <!-- Product page -->
+<%= console.log(product) %>
 <section id="show-product" >
         <img src="../images/catPic.jpeg" id="show-image">
           <div><%= product.name %> </div>
@@ -32,7 +33,7 @@
       <img src="../images/catPic.jpeg" id="show-image">
       <div><%= product.name %></div>
       <div>Description</div>
-      <div><%= product.description &></div>
+      <div><%= product.description %></div>
       <div>Price</div>
       <div><%= product.price %></div>
       <form method="GET" action="/<%= product.id%>/cart">

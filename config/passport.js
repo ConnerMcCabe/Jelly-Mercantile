@@ -14,7 +14,7 @@ passport.use(new GoogleStrategy({
           return cb(null, user);
         } else {
           // we have a new user via OAuth!
-          var newUser = new Student({
+          var newUser = new User({
             name: profile.displayName,
             email: profile.emails[0].value,
             googleId: profile.id
@@ -31,7 +31,7 @@ passport.serializeUser(function(user, done) {
   done(null, user.id);
 });
 passport.deserializeUser(function(id, done) {
-  user.findById(id, function(err, user) {
+  User.findById(id, function(err, user) {
     done(err, user);
   });
 });

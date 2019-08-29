@@ -32,6 +32,12 @@ AAU I want to be able to view my cart if I leave the page without purchasing any
 
 Next Steps:
 =====
+Adjust the login/ logout to appear in the same place, a fized spot on the far right of the nav bar
+Refactor the product line into a forEach so it will display any number of items
+Refactor the nav bar to be floating at the top rather than fixed in the top/middle
+Refactor the pages so there is less travel between pages with very little on them
+Add links to the businesses' social media in a partial footer 
+
 In the furture I would like to add a community input area on the main page or allow comments on the products
 AAU, I would like to be able to access links to the businesses' social media 
 AAU, I would like to see new featured items and read testimonials/ reviews from the initial loading page

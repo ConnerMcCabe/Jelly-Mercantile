@@ -1,10 +1,13 @@
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema
+var mongoose = require('mongoose');
+var Product = require('./product');
+var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
-    googleId: String
- 
+    googleId: String,
+    // cart: [Product],
+//cart array gets product pushed into it
 });
 
 
-  module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema);
