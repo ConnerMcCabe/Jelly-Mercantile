@@ -16,11 +16,11 @@ passport.use(new GoogleStrategy({
           // we have a new user via OAuth!
           var newUser = new User({
             name: profile.displayName,
-            email: profile.emails[0].value,
+            //email: profile.emails[0].value,
             googleId: profile.id
           });
           newUser.save(function(err) {
-            if (err) return cb(err);
+            if (err){console.log('wtf'); return cb(err);}
             return cb(null, newUser);
           });
         }

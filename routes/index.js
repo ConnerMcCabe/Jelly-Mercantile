@@ -6,12 +6,12 @@ var prodCtrl = require('../controllers/product')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { });
+  res.render('index', { user :req.user});
 });
 /* GET OAuth */ 
 router.get('/auth/google', passport.authenticate(
   'google',
-  { scope: ['profile', 'email'] }
+  { scope: ['profile'] }
 ));
 router.get('/oauth2callback', passport.authenticate(
   'google',

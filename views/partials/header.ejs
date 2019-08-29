@@ -20,11 +20,12 @@
                     <button type="submit">Cart</button>
                 </form>
                 
-                <!-- if (user) { -->
+                <% if (user) { %>
                 <a href="/logout">Log Out</a>
-                 <!-- } else { -->
+                 <% } else { %>
                 <a href="/auth/google">Login</a>
-                  <!-- } -->
+                  <% } %>
+                  <%console.log(user)%>
             <!-- <nav class="navbar fixed top"></nav>
                 <a href="#menu" class="box-shadow-menu"> Menu</a> -->
             </ul>
