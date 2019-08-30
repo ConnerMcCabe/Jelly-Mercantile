@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+<body>
+    <br>
+    <h1>Joergen's Jellies</h1>
+    <br>
+    <hr>
+    <br>
+    
+    <section id="rev">
+            <h3>Reviews</h3>
+              <form id="add-review-form" method="POST" action="/carts/<%= user.googleId %>">
+                <label>Review:</label>
+                <textarea name="content"></textarea>
+                <label>Rating:</label>
+                  <select name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                <input type="submit">
+              </form>
+            </section>
+    </body>
+</html>          

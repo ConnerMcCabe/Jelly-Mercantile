@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script defer src="../javascripts/confetti.js-master/confetti.js"></script>
+    <script  src="/javascripts/confetti.js-master/confetti.js"></script>
     <title>Joergen's Jellies</title>
         <nav>
             <ul>
@@ -17,16 +17,15 @@
                 <form action="/products" method="GET">
                     <button type="submit">Jellies</button>
                 </form>
+                <% if (user) { %>
                 <form action="/carts" method="GET">
                     <button type="submit">Cart</button>
                 </form>
-                
-                <% if (user) { %>
                 <a href="/logout">Log Out</a>
                  <% } else { %>
                 <a href="/auth/google">Login</a>
                   <% } %>
-                  <%console.log(user)%>
+                  <!-- (ejs)console.log(user) -->
             <!-- <nav class="navbar fixed top"></nav>
                 <a href="#menu" class="box-shadow-menu"> Menu</a> -->
             </ul>

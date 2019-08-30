@@ -11,13 +11,14 @@ Wireframes:
 
 Screenshots:
 ===== 
-Images of your actual app.
+![catPic](public/images/catPic.jpeg "stand in cat pic")
 
 Technologies Used:
 =====
 HTML5
 JavaScript
 Node.js
+Confetti.js
 Express
 MongoDB
 Mongoose

@@ -13,7 +13,7 @@ var userSchema = new Schema({
     name: String,
     review: [reviewSchema],
     cart: [],
-//cart array gets product pushed into it
+
 });
 
 
