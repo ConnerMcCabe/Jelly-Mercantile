@@ -7,24 +7,53 @@
     <br>
     
 
-    <section id="show-product" >
+    <section>
       <h3>Your Cart</h3>
         <img src="../images/catPic.jpeg" id="show-image">
-          <div>(ejs) product.name</div>
-          <div>Description</div>
-          <div>(ejs) product.description</div>
-          <div>Price</div>
-          <div>(ejs) product.price</div>
+          <div>the Jaguarundi</div>
+          <div id="bld">Description</div>
+          <div>the spiciest of our line up, three types of peppers etc</div>
+          <div id="bld">Price</div>
+          <div>$10.00</div>
           
-          <form method="GET" action="/index">
+          <form method="GET" action="/">
             <button type="submit">Buy Now</button>
           </form>
-          <form method="POST" action="/(ejs)product.id?_method=DELETE">
+          <form method="GET" action="/products">
             <button type="submit">Remove from Cart</button>
           </form>
+          <form method="GET" action="/products">
+            <button type="submit">Add Review</button>
+          </form>
       </section>
+      <section>
+          (ejs) if (movie.reviews.length) { %>
+            <table>
+              <thead>
+                <tr>
+                  <th>Review</th>
+                  <th>Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                (ejs) var total = 0 %>
+                (ejs) movie.reviews.forEach(function(r) { %>
+                  (ejs) total += r.rating %>
+                  <tr>
+                    <td>(ejs)= r.content %></td>
+                    <td>(ejs)= r.rating %></td>
+                  </tr>
+                (ejs) }); %>
+              </tbody>
+            </table>
+          (ejs) } else {
+            <h5>No Reviews Yet</h5>
+          (ejs) }
+      </section> 
+
+
  <section id="rev">
-  <h2>Reviews</h2>
+  <h3>Reviews</h3>
     <form id="add-review-form" method="POST" action="post to reviews page">
       <label>Review:</label>
       <textarea name="content"></textarea>
@@ -39,5 +68,7 @@
       <input type="submit" value="Add Review">
     </form>
   </section>
+
+
   </body>
 </html>

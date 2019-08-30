@@ -11,48 +11,16 @@
     <section id="show-product" >
         <img src="../images/catPic.jpeg" id="show-image">
           <div><%= p.name %> </div>
-          <div>Description</div>
+          <div id="bld">Description</div>
           <div><%= p.description %></div>
-          <div>Price</div>
+          <div id="bld">Price</div>
           <div><%= p.price %></div>
-          <form method="GET" action="">
+          <form method="GET" action="/carts">
               <button type="submit">Add to Cart</button>
           </form>
       </section>
 
       <% }); %>
-      <!-- <section id="show-product" >
-        <img src="../images/catPic.jpeg" id="show-image">
-        <div><%= product.name %></div>
-        <div>Description</div>
-        <div><%= product.description %></div>
-        <div>Price</div>
-        <div><%= product.price %></div>
-        <form method="GET" action="">
-            <button type="submit">Add to Cart</button>
-        </form>
-    </section>
-    <section id="show-product" >
-      <img src="../images/catPic.jpeg" id="show-image">
-      <div><%= product.name %></div>
-      <div>Description</div>
-      <div><%= product.description %></div>
-      <div>Price</div>
-      <div><%= product.price %></div>
-      <form method="GET" action="#">
-          <button type="submit">Add to Cart</button>
-      </form>
-  </section>
-  <section id="show-product" >
-    <img src="../images/catPic.jpeg" id="show-image">
-    <div><%= product.name %></div>
-    <div>Description</div>
-    <div><%= product.description %></div>
-    <div>Price</div>
-    <div><%= product.price %></div>
-    <form method="GET" action="">
-        <button type="submit">Add to Cart</button>
-    </form>
-</section> -->
+      
 </body>
 </html>

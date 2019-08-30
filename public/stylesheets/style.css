@@ -4,7 +4,7 @@ body {
   height: 100vh;
   padding: 0px;
   text-align: center;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif, bold;
   background: linear-gradient(#a09f9f, #7e7e7e);
 /* }#e66465, #9198e5 */
 }
@@ -18,7 +18,10 @@ nav, ul {
 
   font-size: 5vmin;
 }
+#bld {
+  font-weight: 900;
 
+}
 button {
   font-size: 5vmin;
 }

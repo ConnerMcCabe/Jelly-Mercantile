@@ -10,7 +10,7 @@ module.exports = {
 function index(req, res) {
     prod.find({}, function(err, product) {
         if (err) res.send(err)
-        console.log('line 12 controllers/products.js', product)
+        // console.log('line 12 controllers/products.js', product)
         res.render('index', { product, USER });
     });
 }
@@ -23,7 +23,7 @@ function show(req, res) {
 function prodIdx(req, res) {
     prod.find( {} , function(err, products) {
         if (err) res.send(err)
-        console.log('these are the products', products)
+        // console.log('these are the products', products)
         res.render('products/product', {user: req.user, product: products});
     });
 }

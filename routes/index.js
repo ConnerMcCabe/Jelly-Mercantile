@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
-var product = require('../models/product');
 var prodCtrl = require('../controllers/product')
 
 /* GET home page. */
