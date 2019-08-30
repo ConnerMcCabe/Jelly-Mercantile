@@ -5,12 +5,13 @@ body {
   padding: 0px;
   text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif, bold;
-  background: linear-gradient(#a09f9f, #7e7e7e);
-/* }#e66465, #9198e5 */
+  background: linear-gradient(cornflowerblue, cornflowerblue);
+
 }
+
 nav, ul {
   margin: 0%;
-  background-color: #cfcfd8;
+  background-color: #4d4dfa;
   width: 100%;
   justify-content: space-evenly;
   display: flex;
@@ -28,12 +29,13 @@ nav, ul {
   justify-content: center;
 }
 table {
-    display: inline; 
+  display: inline; 
    
 }
 button {
   font-size: 5vmin;
-  padding: 5  px;
+  padding: 5px;
+  background-color: cornflowerblue;
 }
 a {
   color: rgb(0, 0, 0);
@@ -58,6 +60,19 @@ h1, h2 {
 }
 #show-image {
   width: 40vh;
+}
+#add-review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 400px;
+  margin: auto;
+
+}
+#rev {
+  display: inline; 
+
 }
 /* .box-shadow-menu {
   position: relative;

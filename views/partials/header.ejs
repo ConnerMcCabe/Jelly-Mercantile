@@ -21,10 +21,16 @@
                 <form action="/carts" method="GET">
                     <button type="submit">Cart</button>
                 </form>
-                <a href="/logout">Log Out</a>
-                 <% } else { %>
-                <a href="/auth/google">Login</a>
-                  <% } %>
+                <form action="/logout">
+                    <button type="submit">Log Out</button>
+                </form>
+                <% } else { %>
+                    <form action="/auth/google">
+                        <button type="submit">Login</button>
+                    </form>
+                <% } %>
+                    <!-- <a href="logout">Log Out</a> -->
+                  <!-- <a href="/auth/google">Login</a> -->
                   <!-- (ejs)console.log(user) -->
             <!-- <nav class="navbar fixed top"></nav>
                 <a href="#menu" class="box-shadow-menu"> Menu</a> -->
