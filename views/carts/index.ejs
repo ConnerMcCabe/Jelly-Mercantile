@@ -4,18 +4,19 @@
     <h1>Joergen's Jellies</h1>
     <br>
     <hr>
-    <br>
+  
     
-
+  
     <section>
       <h3>Your Cart</h3>
         <img src="../images/catPic.jpeg" id="show-image">
-          <div>the Jaguarundi</div>
+          <h4>the Jaguarundi</h4>
           <div id="bld">Description</div>
           <div>the spiciest of our line up, three types of peppers etc</div>
           <div id="bld">Price</div>
           <div>$10.00</div>
-          
+          <button onclick="confetti.start()">Confetti</button>
+         
           <form method="GET" action="/">
             <button type="submit">Buy Now</button>
           </form>
@@ -26,6 +27,7 @@
             <button type="submit">Add Review</button>
           </form>
       </section>
+  
       <section>
           <% if (user.review.length) { %>
             <table>
@@ -42,8 +44,9 @@
                   <tr>
                     <td><%= r.content %></td>
                     <td><%= r.rating %></td>
-                    <form action="/carts/reviews/<%= idx %>/<%= user.googleId %>?_method=DELETE" method="POST">
-                      <button type="submit">Delete</button>
+                    
+                    <form id="yeet" action="/carts/reviews/<%= idx %>/<%= user.googleId %>?_method=DELETE" method="POST">
+                      <td><button type="submit">Delete</button></td>
                     </form>
                   </tr>
                 <% }); %>

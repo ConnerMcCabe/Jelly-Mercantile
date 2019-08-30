@@ -1,5 +1,5 @@
 body {
-  
+
   margin: 0;
   height: 100vh;
   padding: 0px;
@@ -15,21 +15,32 @@ nav, ul {
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
-
   font-size: 5vmin;
 }
 #bld {
   font-weight: 900;
 
 }
+#bdy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+table {
+    display: inline; 
+   
+}
 button {
   font-size: 5vmin;
+  padding: 5  px;
 }
 a {
   color: rgb(0, 0, 0);
 }
 section {
   padding: 50px;
+  text-align: center;  
   
 }
 h1, h2 {
@@ -38,14 +49,17 @@ h1, h2 {
   flex-direction: row;
 }
 #show-product {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  width: 35vw;
 }
 #show-image {
-  width: 30vh;
+  width: 40vh;
 }
-.box-shadow-menu {
+/* .box-shadow-menu {
   position: relative;
   padding-left: 1.25em;
 }
@@ -60,4 +74,4 @@ h1, h2 {
   box-shadow: 
     0 0.25em 0 0 black,
     0 0.5em 0 0 black;
-}
+} */
